@@ -8,7 +8,7 @@ export default function Main() {
         <div className="post-heading text-center">
           <h3 className="display-4 font-weight-bold">About Me</h3>
           <img src={mainpic} height="300px"  alt="about me pic"/>
-          <hr className="w-50 mx-auto pb-2" />
+          <hr className="w-50 mx-auto" />
         </div>
         <div className=" myInfo row d-flex flex-row">
           <div className="myInfo col-lg-6">

@@ -16,7 +16,7 @@ h1 {
   font-family: 'Great Vibes', cursive;
 }
 
-p {
+p, h3 {
   font-family: 'Cormorant SC', serif;
 }
 
@@ -72,13 +72,11 @@ nav {
 }
 
 .myInfo {
-  font-size: 2rem;
-  margin: 40px 10px;
+  font-size: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   color: #677a8e;
-  padding: 20px;
   /* margin-right: 20px; */
   flex: 3;
 }
