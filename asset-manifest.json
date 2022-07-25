@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/herbhunt/static/css/main.7d566700.css",
+    "main.js": "/herbhunt/static/js/main.fcbf6f9a.js",
+    "static/js/787.233cc2ec.chunk.js": "/herbhunt/static/js/787.233cc2ec.chunk.js",
+    "static/media/mainpic.jpg": "/herbhunt/static/media/mainpic.8bb0547fd78cba505689.jpg",
+    "index.html": "/herbhunt/index.html",
+    "main.7d566700.css.map": "/herbhunt/static/css/main.7d566700.css.map",
+    "main.fcbf6f9a.js.map": "/herbhunt/static/js/main.fcbf6f9a.js.map",
+    "787.233cc2ec.chunk.js.map": "/herbhunt/static/js/787.233cc2ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d566700.css",
+    "static/js/main.fcbf6f9a.js"
+  ]
+}
