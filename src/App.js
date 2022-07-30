@@ -1,9 +1,10 @@
 import "./App.css";
 import Main from "./components/Main";
-import Navbar from "./components/Navbar";
+import Services from './components/Services'
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { useState } from 'react';
+import BasicMenu from "./components/Navbar";
 
 function App() {
   const [pageRender, setPageRender] = useState("about");
@@ -11,7 +12,9 @@ function App() {
     switch (pageRender) {
       case "about":
         return <Main />;
-      case "projects":
+      case "Services":
+        return <Services />;
+      case "Projects":
         return <Projects />;
       case "contact":
         return <Contact />;
@@ -22,7 +25,7 @@ function App() {
   }
   return (
     <div className="App">
-     <Navbar 
+     <BasicMenu 
      pageRender={pageRender}
      setPageRender={setPageRender}/>
      <ConditionalRender />

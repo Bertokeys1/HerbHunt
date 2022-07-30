@@ -1,36 +1,57 @@
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import compass from '../assets/compass.png'
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import compass from "../assets/compass.png";
 
-export default function BasicMenu() {
-
-    // compass button function 
+export default function BasicMenu(props) {
+  
+  // compass menu drop-down function
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClose = () => {
+
+  // function to render menu item sections to page
+  const handleClose = (event) => {
+    const id = event.target.id;
+    props.setPageRender(id);
     setAnchorEl(null);
   };
 
   return (
+    
+    // header home button and compass menu
+    <div className="d-flex justify-content-between">
 
-    // compass button image control
-    <div className='d-flex justify-content-between'>
-        <h1 className='mainName ext-start'>Herb Hunt</h1>
+      {/* Header home button */}
+      <h1
+        anchorEl={anchorEl}
+        open={open}
+        className="mainName ext-start"
+        href="#about"
+        id="about"
+        onClick={handleClose}
+      >
+      Herb Hunt
+      </h1>
+
+      {/* compass menu drop-down */}
       <Button
-        className=''
+        className=""
         id="basic-button"
-        aria-controls={open ? 'basic-menu' : undefined}
+        aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-            <img src={compass} height="100px" style={{bordeRadius: "50%"}} alt="compass me pic"/>    
-        
+        <img
+          src={compass}
+          height="100px"
+          style={{ bordeRadius: "50%" }}
+          alt="compass me pic"
+        />
       </Button>
 
       {/* menu items */}
@@ -40,12 +61,21 @@ export default function BasicMenu() {
         open={open}
         onClose={handleClose}
         MenuListProps={{
-          'aria-labelledby': 'basic-button',
+          "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose} >Projects</MenuItem>
-        <MenuItem onClick={handleClose}>Contact</MenuItem>
-        <MenuItem onClick={handleClose}>Curriculum Vitae</MenuItem>
+        <MenuItem href="#services" id="services" onClick={handleClose}>
+          Services
+        </MenuItem>
+        <MenuItem href="#projects" id="projects" onClick={handleClose}>
+          Projects
+        </MenuItem>
+        <MenuItem href="#contacts" id="contacts" onClick={handleClose}>
+          Contact
+        </MenuItem>
+        <MenuItem href="#cv" id="cv" onClick={handleClose}>
+          Curriculum Vitae
+        </MenuItem>
       </Menu>
     </div>
   );
