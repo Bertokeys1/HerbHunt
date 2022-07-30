@@ -5,7 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import compass from "../assets/compass.png";
 
 export default function BasicMenu(props) {
-  
+
   // compass menu drop-down function
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -70,7 +70,7 @@ export default function BasicMenu(props) {
         <MenuItem href="#projects" id="projects" onClick={handleClose}>
           Projects
         </MenuItem>
-        <MenuItem href="#contacts" id="contacts" onClick={handleClose}>
+        <MenuItem href="#contact" id="contact" onClick={handleClose}>
           Contact
         </MenuItem>
         <MenuItem href="#cv" id="cv" onClick={handleClose}>
