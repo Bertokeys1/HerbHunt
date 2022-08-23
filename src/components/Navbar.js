@@ -3,17 +3,18 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import compass from "../assets/compass.png";
+import { Link } from "@mui/material";
 
 export default function BasicMenu(props) {
 
-  // compass menu drop-down function
+  // compass menu drop-down variables
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  // function to render menu item sections to page
+  // Variable to render menu item sections to page
   const handleClose = (event) => {
     const id = event.target.id;
     props.setPageRender(id);
@@ -26,16 +27,19 @@ export default function BasicMenu(props) {
     <div className="d-flex justify-content-between">
 
       {/* Header home button */}
-      <h1
+      <Link
+        to="/About"
         anchorEl={anchorEl}
         open={open}
+        underline='none'
+        color={"inherit"}
         className="mainName ext-start"
-        href="#about"
-        id="about"
+        href="About"
+        id="aboutMe"
         onClick={handleClose}
       >
       Herb Hunt
-      </h1>
+      </Link>
 
       {/* compass menu drop-down */}
       <Button
@@ -64,16 +68,19 @@ export default function BasicMenu(props) {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem href="#services" id="services" onClick={handleClose}>
+        <MenuItem href="/About" id="About" onClick={handleClose}>
+          About Me  
+        </MenuItem>
+        <MenuItem  href="/Services" id="Services" onClick={handleClose}>
           Services
         </MenuItem>
-        <MenuItem href="#projects" id="projects" onClick={handleClose}>
+        <MenuItem href="projects" id="Projects" onClick={handleClose}>
           Projects
         </MenuItem>
-        <MenuItem href="#contact" id="contact" onClick={handleClose}>
+        <MenuItem href="contact" id="Contact" onClick={handleClose}>
           Contact
         </MenuItem>
-        <MenuItem href="#cv" id="cv" onClick={handleClose}>
+        <MenuItem href="cv" id="cv" onClick={handleClose}>
           Curriculum Vitae
         </MenuItem>
       </Menu>

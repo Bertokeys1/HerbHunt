@@ -5,18 +5,20 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { useState } from 'react';
 import BasicMenu from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
-  const [pageRender, setPageRender] = useState("about");
+  console.log(window.location)
+  const [pageRender, setPageRender] = useState("About");
   function ConditionalRender() {
     switch (pageRender) {
-      case "about":
+      case "About":
         return <Main />;
       case "Services":
         return <Services />;
       case "Projects":
         return <Projects />;
-      case "contact":
+      case "Contact":
         return <Contact />;
 
       default:
@@ -29,6 +31,8 @@ function App() {
      pageRender={pageRender}
      setPageRender={setPageRender}/>
      <ConditionalRender />
+     <Footer></Footer>
+    
     </div>
   );
 }
