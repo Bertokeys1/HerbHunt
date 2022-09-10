@@ -3,9 +3,9 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import compass from "../assets/compass.png";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 
-export default function BasicMenu(props) {
+export default function BasicMenu() {
 
   // compass menu drop-down variables
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -14,21 +14,20 @@ export default function BasicMenu(props) {
     setAnchorEl(event.currentTarget);
   };
 
-  // Variable to render menu item sections to page
+  // Closes drop down when a selection is made
   const handleClose = (event) => {
-    const id = event.target.id;
-    props.setPageRender(id);
     setAnchorEl(null);
   };
 
   return (
     
+
     // header home button and compass menu
     <div className="d-flex justify-content-between">
 
       {/* Header home button */}
       <Link
-        to="/About"
+        to="/"
         anchorEl={anchorEl}
         open={open}
         underline='none'
@@ -43,7 +42,6 @@ export default function BasicMenu(props) {
 
       {/* compass menu drop-down */}
       <Button
-        className=""
         id="basic-button"
         aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
@@ -68,19 +66,19 @@ export default function BasicMenu(props) {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem href="/About" id="About" onClick={handleClose}>
+        <MenuItem component={Link} to="/" id="About" onClick={handleClose}>
           About Me  
         </MenuItem>
-        <MenuItem  href="/Services" id="Services" onClick={handleClose}>
+        <MenuItem component={Link} to="/Services" id="Services" href="services" onClick={handleClose}>
           Services
         </MenuItem>
-        <MenuItem href="projects" id="Projects" onClick={handleClose}>
+        <MenuItem component={Link} to="projects" id="Projects" onClick={handleClose}>
           Projects
         </MenuItem>
-        <MenuItem href="contact" id="Contact" onClick={handleClose}>
+        <MenuItem component={Link} to="contact" id="Contact" onClick={handleClose}>
           Contact
         </MenuItem>
-        <MenuItem href="cv" id="cv" onClick={handleClose}>
+        <MenuItem to="cv" id="cv" onClick={handleClose}>
           Curriculum Vitae
         </MenuItem>
       </Menu>
