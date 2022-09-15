@@ -1,11 +1,17 @@
 import React from "react";
 import mainpic from "../assets/mainpic.jpg";
+import Malibu from "../assets/Malibu-2.jpeg";
+
+
 
 export default function Main() {
   return (
     <section>
       {/* about me container */}
-      <div className="mt-3 p-5" id="About">
+      <div className="mt-3" id="About">
+        <div className="capImg " style={{backgroundRepeat: "no-repeat", backgroundImage: `url(${Malibu})`, backgroundSize: ""}} >
+          <div className="welcome">WELCOME TO CAPTAIN HERB</div> 
+        </div>
         {/* picture on about me picture and line break */}
         <div className="post-heading text-center justify-content-center mainPic">
           <h3 className="display-4 font-weight-bold">About Me</h3>

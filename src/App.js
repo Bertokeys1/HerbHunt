@@ -7,13 +7,17 @@ import BasicMenu from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 
+
+
+
 function App() {
   console.log(window.location)
  
   return (
+    
     <div className="App">
      <BasicMenu />
-     <main>
+     <main >
      <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/Services" element={<Services />} />
@@ -22,7 +26,6 @@ function App() {
      </Routes>
      </main>
      <Footer></Footer>
-    
     </div>
   );
 }
