@@ -1,7 +1,7 @@
 import "./App.css";
 import Main from "./components/Main";
 import Services from './components/Services'
-import Projects from "./components/Projects";
+import About from "./components/About";
 import Contact from "./components/Contact";
 import BasicMenu from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -20,8 +20,8 @@ function App() {
      <main >
      <Routes>
       <Route path="/" element={<Main />} />
+      <Route path="/About" element={<About />} />
       <Route path="/Services" element={<Services />} />
-      <Route path="/Projects" element={<Projects />} />
       <Route path="/Contact" element={<Contact />} />
      </Routes>
      </main>

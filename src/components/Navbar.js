@@ -2,7 +2,7 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import compass from "../assets/compass.png";
+import compass from "../assets/compassSketch.jpg";
 import { Link } from "react-router-dom";
 
 export default function BasicMenu() {
@@ -23,7 +23,7 @@ export default function BasicMenu() {
     
 
     // header home button and compass menu
-    <div className="d-flex justify-content-between">
+    <div className="d-flex justify-content-between  ">
 
       {/* Header home button */}
       <Link
@@ -34,7 +34,7 @@ export default function BasicMenu() {
         color={"inherit"}
         className="mainName ext-start"
         href="About"
-        id="aboutMe"
+        id="Home"
         onClick={handleClose}
       >
       Herb Hunt
@@ -66,14 +66,14 @@ export default function BasicMenu() {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem component={Link} to="/" id="About" onClick={handleClose}>
-          About Me  
+        <MenuItem component={Link} to="/" id="Home" onClick={handleClose}>
+          Home
         </MenuItem>
-        <MenuItem component={Link} to="/Services" id="Services" href="services" onClick={handleClose}>
+        <MenuItem component={Link} to="/About" id="About" onClick={handleClose}>
+          About
+        </MenuItem>
+        <MenuItem component={Link} to="/Services" id="Services"  onClick={handleClose}>
           Services
-        </MenuItem>
-        <MenuItem component={Link} to="projects" id="Projects" onClick={handleClose}>
-          Projects
         </MenuItem>
         <MenuItem component={Link} to="contact" id="Contact" onClick={handleClose}>
           Contact

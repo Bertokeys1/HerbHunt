@@ -1,6 +1,11 @@
+import { Button } from "@mui/material";
 import React from "react";
-import mainpic from "../assets/mainpic.jpg";
+import { Link } from "react-router-dom";
 import Malibu from "../assets/Malibu-2.jpeg";
+import Docked from "../assets/Docked.jpeg";
+import Far from "../assets/Argrosy-far.jpeg";
+import Discovery from "../assets/Discovery-day.jpeg"
+
 
 
 
@@ -8,34 +13,32 @@ export default function Main() {
   return (
     <section>
       {/* about me container */}
-      <div className="mt-3" id="About">
-        <div className="capImg " style={{backgroundRepeat: "no-repeat", backgroundImage: `url(${Malibu})`, backgroundSize: ""}} >
-          <div className="welcome">WELCOME TO CAPTAIN HERB</div> 
+      <div className="mt-3 " id="About">
+        <div className="capImg d-flex " style={{backgroundRepeat: "no-repeat", backgroundImage: `url(${Malibu})`, backgroundSize: ""}} >
+          <div className="welcome ">WELCOME TO CAPTAIN HERB</div> 
         </div>
         {/* picture on about me picture and line break */}
         <div className="post-heading text-center justify-content-center mainPic">
-          <h3 className="display-4 font-weight-bold">About Me</h3>
+          <h3 className="display-4 font-weight-bold">U.S. COAST GUARD LICENSED</h3>
         </div>
-        <div className="d-flex justify-content-center" >
-          <img src={mainpic}  height="400px" width="300px" alt="about me pic" />
+        <div className="d-flex flex-row justify-content-evenly" >
+          <img src={Docked}  height="400px" width="300px" alt="about me pic" />
+          <img src={Far}  height="400px" width="300px" alt="about me pic" />
+          <img src={Discovery}  height="400px" width="300px" alt="about me pic" />
         </div>
         <hr className="w-50 mx-auto" />
 
-        <div className=" myInfo col-lg-6 row d-flex flex-row">
-          <div className="myInfo">
-            {/* info on main page */}
-            <p className="mainInfo">
-              Since learning to sail at the age of 12 my love of the water has
-              continued to grow to being my career focus. My on the water
-              experiences are many as Port Captain of S/S Virginia V, Director
-              of Advanced Training for Freedom Boat Company and Lead Designer of
-              several vessels. I have insightful knowledge and appreciation of
-              this industry. I believe my understanding and skills would enable
-              me to become part of any team that deeply cares and responds with
-              appropriate action.
-            </p>
+        <div className=" text-center justify-content-center ">
+          <div className="display-6 font-weight-bold">15 years experience </div>
+          <div>Boating - Ownership - Boat Operations - Navigation - Systems - Maintainance</div>
+          <div>
+            <Button component={Link} to="/Services" id="Services">FIND OUT MORE</Button>
           </div>
         </div>
+
+        
+
+       
       </div>
     </section>
   );
