@@ -10,10 +10,12 @@
   padding: 1rem 1rem;
   font-size: 3.5rem;
   text-decoration: none;
+  color: rgb(19, 80, 0);
 }
 
 .welcome {
   font-weight: bolder;
+  position: absolute;
 }
 
 
@@ -86,11 +88,15 @@ h1 {
 .myInfo {
   font-size: 1.5rem;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   color: #677a8e;
-  /* margin-right: 20px; */
-  flex: 3;
+  justify-content: center;
+}
+
+.myInfo-img {
+  justify-content: center;
 }
 
 .serviceItems {
@@ -121,6 +127,16 @@ footer {
 }
 
 /* box resize(flex) when page size changes or is used on device with different display size */
+@media screen and (min-width: 900px) {
+  main,
+  .myInfo,
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   main,
   nav {

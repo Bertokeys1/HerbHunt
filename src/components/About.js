@@ -8,15 +8,12 @@ export default function Projects() {
       <div className="post-heading text-center justify-content-center mainPic">
           <h3 className="display-4 font-weight-bold">About Me</h3>
         </div>
-        <div className="d-flex justify-content-center" >
-          <img src={mainPic}  height="400px" width="300px" alt="about me pic" />
-        </div>
         <hr className="w-50 mx-auto" />
-
-        <div className="  row d-flex flex-row">
-          <div className="myInfo">
+        <div className="justify-content-center" >
+        <div className="myInfo">
+          <img src={mainPic}  height="400px" width="300px" alt="about me pic" />
             {/* info on main page */}
-            <p className="mainInfo">
+            <p className="">
               Since learning to sail at the age of 12 my love of the water has
               continued to grow to being my career focus. My on the water
               experiences are many as Port Captain of S/S Virginia V, Director
@@ -27,6 +24,11 @@ export default function Projects() {
               appropriate action.
             </p>
           </div>
+          </div>
+        
+
+        <div className="  col-6 d-flex flex-row">
+          
         </div>
         </div>
         </div>

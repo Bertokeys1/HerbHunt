@@ -78,9 +78,6 @@ export default function BasicMenu() {
         <MenuItem component={Link} to="contact" id="Contact" onClick={handleClose}>
           Contact
         </MenuItem>
-        <MenuItem to="cv" id="cv" onClick={handleClose}>
-          Curriculum Vitae
-        </MenuItem>
       </Menu>
     </div>
   );

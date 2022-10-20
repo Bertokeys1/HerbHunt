@@ -20,7 +20,7 @@ export default function Services() {
             <li>Allowing Boat owners to enjoy a worry free voyage</li>
           </div>
           <div className="serviceItems">
-            <div className="serviceText">Bout Relocation</div>
+            <div className="serviceText">Boat Relocation</div>
           <img src={Maverick}  height="400px" width="300px" alt="about me pic" />
             <div>Primary area: Western USA</div>
             <li>Seasonal relocation</li>
