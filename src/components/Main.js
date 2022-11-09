@@ -14,18 +14,18 @@ export default function Main() {
   return (
     <section>
       {/* about me container */}
-      <div className="mt-3 img-fluid" id="About">
+      <div className=" " id="About">
         <Container className=" capImg  d-flex"  >
-          <figure className="position-relative">
-          <img alt="goldenRecImg" className="img-fluid" src={goldenRec}/>
+          <figure className="welcome">
+          <img alt="goldenRecImg" src={goldenRec}/>
+          <figcaption className=" ">WELCOME TO CAPTAIN HERB</figcaption> 
           </figure>
-          <figcaption className="welcome ">WELCOME TO CAPTAIN HERB</figcaption> 
         </Container>
         {/* picture on about me picture and line break */}
         <div className="post-heading text-center justify-content-center mainPic">
           <h3 className="display-4 font-weight-bold">U.S. COAST GUARD LICENSED</h3>
         </div>
-        <div className="d-flex flex-row justify-content-evenly" >
+        <div className="d-flex-row flex-column justify-content-evenly" >
           <img src={Docked}  height="400px" width="300px" alt="about me pic" />
           <img src={Far}  height="400px" width="300px" alt="about me pic" />
           <img src={Discovery}  height="400px" width="300px" alt="about me pic" />

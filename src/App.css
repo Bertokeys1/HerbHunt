@@ -3,8 +3,6 @@
   font-family: "Cormorant SC", serif;
 }
 
-
-
 .mainName {
   font-family: "Great Vibes", cursive;
   padding: 1rem 1rem;
@@ -14,10 +12,26 @@
 }
 
 .welcome {
-  font-weight: bolder;
-  position: absolute;
+  position: relative;
+  /* max-width: 600px;  */
+  /* justify-content: center; */
 }
 
+/* .welcome {
+  justify-content: center;
+  text-align: center;
+} */
+.welcome img {
+  width: 100%;
+  justify-content: center;
+}
+
+.welcome figcaption {
+  position: absolute;
+  font-weight: bolder;
+  bottom: 50%;
+  left: 20%;
+}
 
 /* font for name on nav bar */
 
@@ -44,15 +58,10 @@
   width: 100%;
   height: 500px;
   font-size: 56px;
-  justify-content: center; 
-}
-
-
-.welcome {
   justify-content: center;
-  padding-top: 250px;
-  text-align: center;
 }
+
+/*  */
 
 .projectItems {
   width: 200px;
@@ -136,7 +145,6 @@ footer {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   main,
   nav {
@@ -144,5 +152,3 @@ footer {
     flex-direction: column;
   }
 }
-
-
