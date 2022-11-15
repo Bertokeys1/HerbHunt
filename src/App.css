@@ -47,10 +47,10 @@ main {
 }
 
 .welcome figcaption {
-  position: absolute;
+  justify-content: center;
+  text-align: center;
+  position: relative;
   font-weight: bolder;
-  bottom: 50%;
-  left: 20%;
 }
 
 /* font for name on nav bar */
@@ -124,7 +124,8 @@ h1 {
   justify-content: center;
 }
 
-.myInfo-img {
+.myInfo 
+img {
   justify-content: center;
 }
 
@@ -161,11 +162,17 @@ footer {
   .myInfo,
   .mainServicePics,
   .welcome img,
-  .welcome figCaption,
   nav {
+    
     height: auto;
     display: flex;
     flex-direction: row;
+  }
+
+  .welcome figCaption {
+    text-align: center;
+    justify-content: center;
+    bottom: 45%;
   }
 }
 
@@ -173,14 +180,20 @@ footer {
   main,
   .mainServicePics,
   .welcome img,
-  .welcome figCaption,
   .capImg,
   nav {
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .capImg {
+
+  .welcome figCaption {
     text-align: center;
+    position: absolute;
+    bottom: 25%;
+  }
+
+  .capImg {
+    justify-content: center;
     font-size: 32px;
     height: auto;
     margin-top: 50px;
