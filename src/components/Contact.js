@@ -31,13 +31,12 @@ export default function Contacts() {
       component="form"
       sx={{
         '& > :not(style)': { m: 1, width: '25ch' },
-        width: 500,
-        maxWidth: '100%',
+  
       }}
       noValidate
       autoComplete="off"
     >
-     <TextField id="standard-basic" label="Message" variant="standard" fullWidth multiline rows={6} />
+     <TextField id="fullWidth" label="Message" variant="standard" fullwidth multiline rows={6} />
 
     </Box>
         </div>
