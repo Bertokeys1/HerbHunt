@@ -15,25 +15,34 @@ export default function Main() {
     <section>
       {/* about me container */}
       <div className="" id="About">
-        <Container className=" capImg  d-flex"  >
+        <Container className=" capImg  d-flex flex-column"  >
           <figure className="welcome">
           <img alt="goldenRecImg" src={goldenRec}/>
-          <figcaption className="">WELCOME TO CAPTAIN HERB</figcaption> 
+          <figcaption>WELCOME TO CAPTAIN HERB</figcaption> 
           </figure>
         </Container>
+
         {/* picture on about me picture and line break */}
-        <div className="post-heading text-center justify-content-center mainPic">
+        <div className="post-heading text-center justify-content-center">
           <h3 className="display-4 font-weight-bold">U.S. COAST GUARD LICENSED</h3>
+        <hr className="w-50 mx-auto" />
         </div>
-        <div className="mainServicePics" >
-          <img src={Docked}  height="400px" width="300px" alt="about me pic" />
+        <Container className="mainServicePics" >
+          <figure>
+          <img className="docked" src={Docked}  height="400px" width="300px" alt="about me pic" />
+          <figcaption>
+              <li>
+              somthing
+              </li>
+          </figcaption>
           <img src={Far}  height="400px" width="300px" alt="about me pic" />
           <img src={Discovery}  height="400px" width="300px" alt="about me pic" />
-        </div>
-        <hr className="w-50 mx-auto" />
+        </figure>
+        </Container>
 
         <div className=" text-center justify-content-center ">
           <div className="display-6 font-weight-bold">20 years experience </div>
+        <hr className="w-50 mx-auto" />
           <div>Boating - Ownership - Boat Operations - Navigation - Systems - Maintainance</div>
           <div>
             <Button component={Link} to="/Services" id="Services">FIND OUT MORE</Button>
