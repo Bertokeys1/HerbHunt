@@ -186,10 +186,19 @@ footer {
   .mainServicePics,
   .welcome img,
   .capImg,
-  .contactMessage
   nav {
-    flex-wrap: wrap;
+    flex-wrap: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .contactMessage,
+  .contactForm,
+  .message {
+    flex-wrap: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .welcome figCaption {
