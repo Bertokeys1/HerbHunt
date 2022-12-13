@@ -13,20 +13,20 @@ export default function Services() {
           <div className="display-4 font-weight-bold">Services</div>
           <hr className="w-50 mx-auto pb-2" />
         </div>
-      <div className="d-flex justify-content-evenly" >
-          <div className="serviceItems">
+      <div className="serviceItems" >
+          <div >
             <div className="serviceText">Captain For Hire</div>
           <img src={Sail}  height="400px" width="300px" alt="about me pic" />
             <li>Allowing Boat owners to enjoy a worry free voyage</li>
           </div>
-          <div className="serviceItems">
+          <div >
             <div className="serviceText">Boat Relocation</div>
           <img src={Maverick}  height="400px" width="300px" alt="about me pic" />
             <div>Primary area: Western USA</div>
             <li>Seasonal relocation</li>
             <li>With or without oner aboard</li>
           </div>
-          <div className="serviceItems">
+          <div>
             <div className="serviceText">Relief Captain</div>
           <img src={Docks}  height="400px" width="300px" alt="about me pic" />
             <li>Professional Captain onboard to assist with travel or relocation</li>

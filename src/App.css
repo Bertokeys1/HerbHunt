@@ -89,11 +89,7 @@ main {
 
 }
 
-.projectItems {
-  width: 200px;
-  height: 200px;
-  justify-content: center;
-}
+
 
 h1 {
   font-family: "Great Vibes", cursive;
@@ -135,7 +131,9 @@ h1 {
 }
 
 .serviceItems {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   text-align: center;
 }
 
@@ -151,9 +149,11 @@ h1 {
 }
 
 .serviceContact {
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 footer {
@@ -168,6 +168,8 @@ footer {
   .welcome img,
   .contactForm,
   .contactMessage,
+  .serviceContact,
+  .serviceItems,
   nav {
     height: auto;
     display: flex;
@@ -186,10 +188,15 @@ footer {
   .mainServicePics,
   .welcome img,
   .capImg,
+  .myInfo,
+  .serviceItems,
+  .serviceText,
   nav {
     flex-wrap: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .contactMessage,
