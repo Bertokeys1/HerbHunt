@@ -19,6 +19,10 @@ main {
   color: rgb(19, 80, 0);
 }
 
+.Gtriangle {
+  animation: main-load 1200s opac;
+}
+
 .welcome {
   position: relative;
   /* max-width: 600px;  */
@@ -33,6 +37,8 @@ main {
   flex-direction: column;
 }
 
+
+
 .welcome figcaption {
   justify-content: center;
   text-align: center;
@@ -41,20 +47,28 @@ main {
 }
 
 /* font for name on nav bar */
-.mainServicePics figure {
-  width: 100%;
-  height: 1300px;
+.mainServicePics {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
+  width: 100%;
+  height: 1400px;
+  align-items: center;
+  position: relative;
+  
 }
 
-.docked figcaption {
-  justify-content: center;
-  text-align: center;
-  position: relative;
 
+
+.mainServicePics figcaption {
+  text-align: center;
+  position: absolute;
+  font-weight: bolder;
+  box-shadow: 0 0 2rem 0 rgb(0, 0, 0);
+  border-radius: 1rem;
+  color: azure;
+  align-items: center;
+  text-align: center;
 }
 
 .mainPic {
@@ -164,7 +178,6 @@ footer {
 /* box resize(flex) when page size changes or is used on device with different display size */
 @media  (min-width: 900px) {
   .myInfo,
-  .mainServicePics figure,
   .welcome img,
   .contactForm,
   .contactMessage,
@@ -181,11 +194,26 @@ footer {
     justify-content: center;
     bottom: 45%;
   }
+
+  .mainServicePics {
+    padding-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .mainServicePics figcaption {
+    position: absolute;
+    justify-content: center;
+    bottom: 25%;
+  }
+
 }
 
 @media  (max-width: 768px) {
   main,
-  .mainServicePics,
   .welcome img,
   .capImg,
   .myInfo,
@@ -213,6 +241,14 @@ footer {
     position: absolute;
     bottom: 25%;
   }
+
+  .mainServicePics figCaption {
+    text-align: center;
+    position: relative;
+    bottom: 25%;
+  }
+
+  
   
   .capImg {
     justify-content: center;
