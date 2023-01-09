@@ -1,45 +1,72 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-
-
-
+import React, { useRef } from "react";
+import TextField from "@mui/material/TextField";
+import { Button } from "@mui/material";
+import emailjs from "@emailjs/browser";
 
 export default function Contacts() {
-    return (
-      <div>
-          <div id="contacts" className="mt-5 pb-5">
-        <div className=" post-heading text-center">
-          <h3 className="display-4 font-weight-bold">Contact Me</h3>
-          <hr className="w-50 mx-auto pb-2" />
-        </div>
-        <Box
-        className='contactForm'
-      component="form"
-      sx={{
-        '& > :not(style)': { m: 1, width: '25ch' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <TextField id="standard-basic" label="Name" variant="standard" />
-      <TextField id="standard-basic" label="Email" variant="standard" />
+  const form = useRef();
 
-    </Box>
-    <Box
-        className='contactMessage'
-      component="form"
-      sx={{
-        '& > :not(style)': { m: 1, width: '25ch' },
-  
-      }}
-      noValidate
-      autoComplete="off"
-    >
-     <TextField id="fullWidth" label="Message" variant="standard" fullwidth multiline rows={6} />
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    </Box>
-        </div>
+    emailjs
+      .sendForm(
+        "service_qvga7bg",
+        "template_t8ivwpr",
+        form.current,
+        "AaOxXPjoUUM_9BIig"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+  return (
+    <form ref={form} id="contacts" className="mt-5 pb-5 contact" onSubmit={sendEmail}>
+      <div className=" post-heading text-center">
+        <h3 className="display-4 font-weight-bold">Contact Me</h3>
+        <hr className="w-50 mx-auto pb-2" />
       </div>
-    );
-  }
+      <div className="contactForm">
+        <TextField
+          id="standard-basic"
+          label="Email"
+          variant="standard"
+          type="email"
+          name="email"
+        />
+        <TextField
+          id="standard-basic"
+          label="Subject"
+          variant="standard"
+          type="subject"
+          name="Subject"
+        />
+        <TextField
+          id="standard-basic"
+          label="Name"
+          variant="standard"
+          type="text"
+          name="from_name"
+        />
+        <TextField
+          id="fullWidth"
+          label="Message"
+          variant="standard"
+          fullwidth
+          multiline
+          rows={6}
+          type="text"
+          name="message"
+        />
+
+      <Button variant="text" type="submit" value="Send">Send</Button>
+      </div>
+    </form>
+  );
+}
