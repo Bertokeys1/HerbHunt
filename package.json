@@ -2,7 +2,7 @@
   "name": "herbhunt",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bertokeys1.github.io/",
+  "homepage": "https://bertokeys1.github.io/herbhunt/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.9.3",
