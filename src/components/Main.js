@@ -32,17 +32,17 @@ export default function Main() {
         <Container className="mainServicePics ">
           <figure>
             <img src={Docked} height="400px" width="300px" alt="about me pic" />
-            <figcaption>
-              <div>INFORMATION</div>
-              <div>continued</div>
+            <figcaption className="mainServiceContent">
+              <div>Information</div>
+              <div>Trusted 100-ton Licensed Captain with a diverse portfolio. <Button variant="" component={Link} to="/About" id="About">About me</Button> </div>
             </figcaption>
           </figure>
 
           <figure>
             <img src={Far} height="400px" width="300px" alt="about me pic" />
-            <figcaption>
+            <figcaption className="mainServiceContent">
               <div>SERVICES</div>
-              <div>continued</div>
+              <div>Captain for hire. Boat delivery. Relief captain. <Button variant="" component={Link} to="/Services" id="Services">Find out more</Button></div>
             </figcaption>
           </figure>
           <figure>
@@ -52,9 +52,10 @@ export default function Main() {
               width="300px"
               alt="about me pic"
             />
-            <figcaption>
+            <figcaption className="mainServiceContent">
               <div>CONTACT</div>
-              <div>continued</div>
+              <div>Message me directly for any questions or inqueries. <Button variant="" component={Link} to="/Content" id="Content">Send a message</Button>
+              </div>
             </figcaption>
           </figure>
         </Container>
@@ -66,7 +67,7 @@ export default function Main() {
             Boating - Ownership - Boat Operations - Navigation - Systems -
             Maintainance
           </div>
-          <div>
+          <div className="mainLink">
             <Button component={Link} to="/Services" id="Services">
               FIND OUT MORE
             </Button>

@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="myInfo">
           <img src={mainPic}  height="400px" width="300px" alt="about me pic" />
             {/* info on main page */}
-            <p className="">
+            <p className="aboutContent">
               Since learning to sail at the age of 12 my love of the water has
               continued to grow to being my career focus. My on the water
               experiences are many as Port Captain of S/S Virginia V, Director
