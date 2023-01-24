@@ -42,17 +42,17 @@ export default function Contacts() {
         />
         <TextField
           id="standard-basic"
-          label="Subject"
-          variant="standard"
-          type="subject"
-          name="Subject"
-        />
-        <TextField
-          id="standard-basic"
           label="Name"
           variant="standard"
           type="text"
           name="from_name"
+        />
+        <TextField
+          id="standard-basic"
+          label="Subject"
+          variant="standard"
+          type="subject"
+          name="Subject"
         />
         <TextField
           id="fullWidth"

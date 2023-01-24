@@ -75,6 +75,7 @@ main {
 .mainServiceContent {
   width: 300px;
   text-align: center;
+  margin-bottom: -5rem;
 }
 
 .mainLink {
@@ -103,6 +104,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
+  height: 450px;
 }
 
 .contactMessage {
@@ -165,6 +168,11 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.serviceItems img {
+  object-fit: contain;
 }
 
 .serviceText {
@@ -195,7 +203,6 @@ footer {
 @media  (min-width: 900px) {
   .myInfo,
   .welcome img,
-  .contactForm,
   .contactMessage,
   .serviceContact,
   .serviceItems,
@@ -233,7 +240,6 @@ footer {
   .welcome img,
   .capImg,
   .myInfo,
-  .serviceItems,
   .serviceText,
   nav {
     flex-wrap: flex;
@@ -241,6 +247,15 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .serviceItems {
+    flex-wrap: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: inherit;
   }
 
   .contactMessage,

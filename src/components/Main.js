@@ -42,7 +42,7 @@ export default function Main() {
             <img src={Far} height="400px" width="300px" alt="about me pic" />
             <figcaption className="mainServiceContent">
               <div>SERVICES</div>
-              <div>Captain for hire. Boat delivery. Relief captain. <Button variant="" component={Link} to="/Services" id="Services">Find out more</Button></div>
+              <div>Captain for hire - Boat delivery - Relief captain. <Button variant="" component={Link} to="/Services" id="Services">Find out more</Button></div>
             </figcaption>
           </figure>
           <figure>
