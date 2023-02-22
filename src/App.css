@@ -12,19 +12,21 @@ main {
 }
 
 .mainName {
-  font-family: "Great Vibes", cursive;
   padding: 1rem 1rem;
   font-size: 3.5rem;
   text-decoration: none;
-  color: rgb(19, 80, 0);
+  color: rgb(1, 94, 1);
+  
 }
 
 .Gtriangle {
   animation: main-load 1200s opac;
 }
 
+
 .welcome {
   position: relative;
+  animation: main-load 1200s opac;
   /* max-width: 600px;  */
   /* justify-content: center; */
 }
@@ -232,6 +234,8 @@ footer {
     justify-content: center;
     bottom: 25%;
   }
+
+
 
 }
 

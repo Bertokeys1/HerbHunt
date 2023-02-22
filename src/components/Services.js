@@ -30,7 +30,7 @@ export default function Services() {
             <li>With or without oner aboard</li>
           </div>
           <div>
-            <div className="serviceText">Relief Captain</div>
+            <div className="serviceText">Racing/Competitive Sailing</div>
           <img src={Docks}  height="270px" width="300px" alt="about me pic" />
             <li>Professional Captain onboard to assist with travel or relocation</li>
           </div>
@@ -38,12 +38,12 @@ export default function Services() {
 
         <div className="serviceItems" >
           <div >
-            <div className="serviceText">Captain For Hire</div>
+            <div className="serviceText">Owner Maintenence Monsultation</div>
           <img src={Malibu}  height="270px" width="300px" alt="about me pic" />
             <li>Allowing Boat owners to enjoy a worry free voyage</li>
           </div>
           <div >
-            <div className="serviceText">Boat Relocation</div>
+            <div className="serviceText">Racing</div>
           <img src={Docked}  height="270px" width="300px" alt="about me pic" />
             <div>Primary area: Western USA</div>
             <li>Seasonal relocation</li>
