@@ -253,6 +253,15 @@ footer {
     bottom: 25%;
   }
 
+  .serviceBlocks {
+    width: 550px;
+  }
+
+  .serviceBlocks li {
+    text-align: start;
+    margin-left: 8rem;
+  }
+
 
 
 }
@@ -281,6 +290,7 @@ footer {
   }
 
   .serviceBlocks li{
+    width: 340px;
     text-align: start;
     margin-left: 2rem;
     justify-content: center;

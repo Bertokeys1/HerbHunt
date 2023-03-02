@@ -48,7 +48,7 @@ export default function Services() {
           <img src={Docked}  height="270px" width="300px" alt="about me pic" />
             <li>Consult with an experienced captain to review a trip and boat management</li>
           </div>
-          <div>
+          <div className="serviceBlocks">
             <div className="serviceText">Relief Captain</div>
           <img src={Wheel}  height="270px" width="300px" alt="about me pic" />
             <li>Professional Captain onboard to assist with travel or relocation</li>
