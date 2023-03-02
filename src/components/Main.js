@@ -54,7 +54,7 @@ export default function Main() {
             />
             <figcaption className="mainServiceContent">
               <div>CONTACT</div>
-              <div>Message me directly for any questions or inqueries. <Button variant="" component={Link} to="/Content" id="Content">Send a message</Button>
+              <div>Message me directly for any questions or inqueries. <Button variant="" component={Link} to="/Contact" id="Contact">Send a message</Button>
               </div>
             </figcaption>
           </figure>

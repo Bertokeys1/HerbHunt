@@ -191,7 +191,6 @@ h1 {
 
 .serviceBlocks {
   margin-bottom: 2rem;
-  width: 550px;
 }
 
 
@@ -283,7 +282,7 @@ footer {
 
   .serviceBlocks li{
     text-align: start;
-    margin-left: 8rem;
+    margin-left: 2rem;
     justify-content: center;
   }
 
