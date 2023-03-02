@@ -28,10 +28,21 @@ export default function Contacts() {
   };
   return (
     <form ref={form} id="contacts" className="mt-5 pb-5 contact" onSubmit={sendEmail}>
-      <div className=" post-heading text-center">
+      <div className="post-heading text-center">
         <h3 className="display-4 font-weight-bold">Contact Me</h3>
         <hr className="w-50 mx-auto pb-2" />
       </div>
+
+      <section className="contactInfo">
+        <div className="fs-2">Send me an email. I'll contact you shortly.</div>
+        <div className="fs-5">
+        <li>What services are you looking for?</li>
+        <li>Please send a description of your vessel. Include information about the speed and the engine type (gas/diesel).</li>
+        <li>What dates are you looking for?</li>
+        <li>Where is the daparting location and arrival description?</li>
+        </div>
+      </section>
+      
       <div className="contactForm">
         <TextField
           id="standard-basic"

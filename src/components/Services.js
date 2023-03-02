@@ -17,37 +17,36 @@ export default function Services() {
           <hr className="w-50 mx-auto pb-2" />
         </div>
       <div className="serviceItems" >
-          <div >
-            <div className="serviceText">Captain For Hire</div>
+          <div className="serviceBlocks">
+            <div className="serviceText">Captain for hire</div>
           <img src={Sail}  height="270px" width="300px" alt="about me pic" />
-            <li>Allowing Boat owners to enjoy a worry free voyage</li>
+            <li>Enjoy a worry free voyage for boat owners</li>
           </div>
-          <div >
-            <div className="serviceText">Boat Relocation</div>
+          <div className="serviceBlocks">
+            <div className="serviceText">Boat relocation</div>
           <img src={Maverick}  height="270px" width="300px" alt="about me pic" />
             <div>Primary area: Western USA</div>
             <li>Seasonal relocation</li>
-            <li>With or without oner aboard</li>
+            <li>With or without owner aboard</li>
           </div>
-          <div>
+          <div className="serviceBlocks">
             <div className="serviceText">Racing/Competitive Sailing</div>
           <img src={Docks}  height="270px" width="300px" alt="about me pic" />
-            <li>Professional Captain onboard to assist with travel or relocation</li>
+            <li>Drive and communicate with crew to keep vessel moving fast</li>
           </div>
         </div>
 
         <div className="serviceItems" >
-          <div >
-            <div className="serviceText">Owner Maintenence Monsultation</div>
+          <div className="serviceBlocks">
+            <div className="serviceText">Owner Maintenence consultation</div>
           <img src={Malibu}  height="270px" width="300px" alt="about me pic" />
-            <li>Allowing Boat owners to enjoy a worry free voyage</li>
+            <li>Establishing regular maintenence routines and schedule</li>
+            <li>Training for DYI preventative maintenence</li>
           </div>
-          <div >
-            <div className="serviceText">Racing</div>
+          <div className="serviceBlocks">
+            <div className="serviceText">Trip planing</div>
           <img src={Docked}  height="270px" width="300px" alt="about me pic" />
-            <div>Primary area: Western USA</div>
-            <li>Seasonal relocation</li>
-            <li>With or without oner aboard</li>
+            <li>Consult with an experienced captain to review a trip and boat management</li>
           </div>
           <div>
             <div className="serviceText">Relief Captain</div>
