@@ -27,7 +27,7 @@ export default function Contacts() {
     e.target.reset();
   };
   return (
-    <form ref={form} id="contacts" className="mt-5 pb-5 contact" onSubmit={sendEmail}>
+    <form ref={form} id="contact" className="mt-5 pb-5 contact" onSubmit={sendEmail}>
       <div className="post-heading text-center">
         <h3 className="display-4 font-weight-bold">Contact Me</h3>
         <hr className="w-50 mx-auto pb-2" />

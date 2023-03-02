@@ -4,7 +4,7 @@ import mainPic from "../assets/mainpic.jpg"
 export default function Projects() {
   return (
     <div>
-      <div className="" id="Projects">
+      <div className="" id="About">
       <div className="post-heading text-center justify-content-center mainPic">
           <h3 className="display-4 font-weight-bold">About Me</h3>
         </div>
