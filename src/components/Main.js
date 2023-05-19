@@ -30,22 +30,23 @@ export default function Main() {
         </div>
 
         <Container className="mainServicePics ">
-          <figure>
+          
+          <Button variant="" className="mainPicButton" component={Link} to="/About" id="Home">
             <img src={Docked} height="400px" width="300px" alt="about me pic" />
             <figcaption className="mainServiceContent">
               <div>Information</div>
-              <div>Trusted 100-ton Licensed Captain with a diverse portfolio. <Button variant="" component={Link} to="/About" id="About">About me</Button> </div>
+              <div>Trusted 100-ton Licensed Captain with a diverse portfolio.</div>
             </figcaption>
-          </figure>
+          </Button>
 
-          <figure>
-            <img src={Far} height="400px" width="300px" alt="about me pic" />
+          <Button variant="" className="mainPicButton" component={Link} to="/Services" id="Home">
+          <img src={Far} height="400px" width="300px" alt="about me pic" />
             <figcaption className="mainServiceContent">
               <div>SERVICES</div>
-              <div>Captain for hire - Boat delivery - Relief captain. <Button variant="" component={Link} to="/Services" id="Services">Find out more</Button></div>
+              <div>Captain for hire - Boat delivery - Relief captain.</div>
             </figcaption>
-          </figure>
-          <figure>
+          </Button>
+          <Button variant=""className="mainPicButton"  component={Link} to="/Contact" id="Home">
             <img
               src={Discovery}
               height="400px"
@@ -54,10 +55,9 @@ export default function Main() {
             />
             <figcaption className="mainServiceContent">
               <div>CONTACT</div>
-              <div>Message me directly for any questions or inqueries. <Button variant="" component={Link} to="/Contact" id="Contact">Send a message</Button>
-              </div>
+              <div>Message me directly for any questions or inqueries.</div>
             </figcaption>
-          </figure>
+          </Button>
         </Container>
 
         <div className=" text-center justify-content-center ">
@@ -68,7 +68,7 @@ export default function Main() {
             Maintainance
           </div>
           <div className="mainLink">
-            <Button component={Link} to="/Services" id="Services">
+            <Button component={Link} to="/Services" id="Home">
               FIND OUT MORE
             </Button>
           </div>

@@ -5,6 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import compass from "../assets/compassSketch.jpg";
 import { Link } from "react-router-dom";
 
+
 export default function BasicMenu() {
 
   // compass menu drop-down variables
@@ -23,7 +24,7 @@ export default function BasicMenu() {
     
 
     // header home button and compass menu
-    <div className="d-flex justify-content-between  ">
+    <div className="d-flex justify-content-between navBar ">
 
       {/* Header home button */}
       <Link
@@ -51,13 +52,14 @@ export default function BasicMenu() {
         <img
           src={compass}
           height="100px"
-          style={{ bordeRadius: "50%" }}
           alt="compass me pic"
         />
+        <div>Site Navigation</div>
       </Button>
 
       {/* menu items */}
       <Menu
+        className="compass"
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}

@@ -10,11 +10,11 @@ import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
-    <div>
-      <div id="Services" className="mt-5 pb-5">
+    <div id="Services">
+      <div  className="mt-5 pb-5">
         <div className="post-heading text-center">
           <div className="display-4 font-weight-bold">Services</div>
-          <hr className="w-50 mx-auto pb-2" />
+          <hr className="w-50 mx-auto pb-2"/>
         </div>
       <div className="serviceItems" >
           <div className="serviceBlocks">
@@ -57,7 +57,7 @@ export default function Services() {
 
       </div>      
       <div className="serviceContact">
-      <Button component={Link} to="/Contact" id="Contact" >
+      <Button component={Link} to="/Contact"  >
         Contact Me
       </Button>
       </div>
