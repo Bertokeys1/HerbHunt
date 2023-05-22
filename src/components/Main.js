@@ -14,10 +14,10 @@ export default function Main() {
     <section>
       {/* about me container */}
       <div id="About">
-        <Container className=" capImg  d-flex flex-column">
-          <figure className="welcome">
+        <Container className="welcome  d-flex flex-column">
+          <figure className="">
+            <figcaption>WELCOME</figcaption>
             <img className="Gtriangle" alt="goldenRecImg" src={goldenRec} />
-            <figcaption>WELCOME TO CAPTAIN HERB</figcaption>
           </figure>
         </Container>
 

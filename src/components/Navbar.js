@@ -38,7 +38,7 @@ export default function BasicMenu() {
         id="Home"
         onClick={handleClose}
       >
-      Herb Hunt
+      Captain Herb Hunt
       </Link>
 
       {/* compass menu drop-down */}
@@ -51,7 +51,7 @@ export default function BasicMenu() {
       >
         <img
           src={compass}
-          height="100px"
+          height="150px"
           alt="compass me pic"
         />
         <div>Site Navigation</div>
