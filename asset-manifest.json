@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6a9cea0.css",
-    "main.js": "/static/js/main.21098761.js",
+    "main.css": "/static/css/main.916df933.css",
+    "main.js": "/static/js/main.8a3b2abb.js",
     "static/js/787.233cc2ec.chunk.js": "/static/js/787.233cc2ec.chunk.js",
     "static/media/Offshore.jpeg": "/static/media/Offshore.a92f0e1517cfd5d0cace.jpeg",
     "static/media/Discovery-day.jpeg": "/static/media/Discovery-day.b32eaa623ec2095c534e.jpeg",
@@ -15,12 +15,12 @@
     "static/media/mainpic.jpg": "/static/media/mainpic.8bb0547fd78cba505689.jpg",
     "static/media/goldenRec.jpg": "/static/media/goldenRec.b9b014b9041c59e8dc7a.jpg",
     "index.html": "/index.html",
-    "main.d6a9cea0.css.map": "/static/css/main.d6a9cea0.css.map",
-    "main.21098761.js.map": "/static/js/main.21098761.js.map",
+    "main.916df933.css.map": "/static/css/main.916df933.css.map",
+    "main.8a3b2abb.js.map": "/static/js/main.8a3b2abb.js.map",
     "787.233cc2ec.chunk.js.map": "/static/js/787.233cc2ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6a9cea0.css",
-    "static/js/main.21098761.js"
+    "static/css/main.916df933.css",
+    "static/js/main.8a3b2abb.js"
   ]
 }
