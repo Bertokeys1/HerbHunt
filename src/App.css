@@ -11,22 +11,19 @@ main {
   width: 100%;
 }
 
-.navBar {
-  width: 100%;
-}
 
 
 .mainName {
   position: relative;
-  padding: 1.8rem 1rem;
-  font-size: 3.8rem;
+  padding: 1rem .5rem;
+  font-size: 4rem;
   text-decoration: none;
   color: rgb(1, 94, 1);
-  line-height: 50px;
+  line-height: 52px;
 }
 
 .navBar Button {
-  margin: 1rem 2.5rem;
+  padding: 1rem 2rem;
   flex-flow: column;
 }
 
@@ -45,9 +42,8 @@ main {
   position: absolute;
   font-weight: bolder;
   font-size: 40px;
-  width: 100%;
   text-align: center;
-  margin-right: 1rem;
+  width: 90%;
 }
 
 

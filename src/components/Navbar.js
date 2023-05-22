@@ -51,7 +51,7 @@ export default function BasicMenu() {
       >
         <img
           src={compass}
-          height="150px"
+          height="120px"
           alt="compass me pic"
         />
         <div>Site Navigation</div>
